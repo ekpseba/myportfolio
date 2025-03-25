@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>PortFolio</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  
+  <script src="script.js"></script>
+  
+  <box-icon name='menu' id="menuicon "></box-icon>
+  
+   <header class="header">
+     <a href="#home" class="logo">Sebastian 
+       <span> Filote </span></a>
+     <nav class="navbar">
+       <a href="#home"> Home </a>
+       <a href="#Works" > Works </a>
+       <a href="#services" > Services </a>
+       <a href="#Contact" > Contact </a>
+      </nav>
+    </header>
+
+       <section class="home" id="home">
+        <div class="home-content">
+          <h1>Hi, it's <span> Sebastian </span></h1>
+          <h3 class="text-animation">I'm a  <span></span></h3>
+          <p>Dare forma alle immagini e alle idee significa trasformarle in emozioni che parlano direttamente al cuore. Ogni progetto diventa una narrazione unica, capace di evocare sogni, connessioni e autenticità.</p>
+          <br>
+          <div class="social-icons">
+            <a href="#"><i class='bx bxl-linkedin'></i>
+            <a href="#"><i class='bx bxl-instagram' ></i>
+          </div>
+          <br>
+          <div class="btn-group">
+            <a href="#Contact" class="btn">Contact</a>
+          </div>
+        </div>
+        <div class="home-img">
+          <img src="profile_image.jpeg" alt="">
+        </div>
+        </section>
+
+     
+
+        <section class="services" id="services">
+          <h2 class="heading">Services</h2>
+
+          <div class="services-container">
+            <div class="services-box">
+              <div class="services-info">
+                <h4>Video Editing</h4>
+                <p>Offro un servizio di video editing che trasforma le tue riprese in storie emozionanti e ben rifinite. Con attenzione ai dettagli e uno sguardo creativo, do vita alle tue idee per creare contenuti visivi che catturano e comunicano il messaggio desiderato.</p>
+              </div>
+            </div>
+
+            <div class="services-box">
+              <div class="services-info">
+                <h4>ADS/ADV</h4>
+                <p>Creo ads/adv che non sono solo visivi, ma esperienze che parlano al pubblico. Ogni elemento è progettato per coinvolgere, ispirare e lasciare un ricordo duraturo, trasformando un'idea in una connessione reale.</p>
+              </div>
+            </div>
+            <div class="services-box">
+              <div class="services-info">
+                <h4>Logo Animation</h4>
+                <p>Creo animazioni logo che trasformano il tuo marchio in movimento puro. Ogni frame è pensato per raccontare la tua storia, dare vita alla tua identità e lasciare un impatto memorabile che si distingue in ogni contesto.</p>
+              </div>
+            </div>
+            <div class="services-box">
+              <div class="services-info">
+                <h4>Brand Identity</h4>
+                <p>Progetto identità di brand che respirano autenticità e raccontano storie capaci di creare un legame profondo. Dal simbolo che parla al cuore, ai dettagli che lasciano un'impronta indelebile, ogni elemento diventa un tassello unico di un racconto visivo memorabile.</p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <section class="Works" id="Works">
+          <h2 class="heading">Works</h2>
+            <div class="carousel-container">
+             <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
+            <div class="scroll-container">
+                <video src="Adidas.mp4" muted></video>
+                <video src="CELTICS.mp4"muted></video>
+                <video src="rhove.mp4" muted></video>
+                <video src="Aprilia_Card.mp4" muted></video>
+                <video src="Jlord_Canvas_v02.mp4" muted></video>
+                <video src="NUOVASCENA.mp4" muted></video>
+                <video src="aprilia_ecorace.mp4" muted></video>
+                <video src="RB_Blur.mp4" muted></video>
+                <video src="giornatamondiale_Terra_1.mp4" muted></video>
+                <video src="Illy_Bea_v02.mp4" muted></video>
+                
+            </div>
+             <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-container">
+          <button class="scroll-btn left" onclick="scrollLeftPhotos()">&#10094;</button>
+          <div class="photos-container">
+              <div class="photo-wrapper">
+                  <img src="tatum 2.png" alt="Foto 1">
+              </div>
+              <div class="photo-wrapper">
+                  <img src="HUSTLE cover 3.jpg" alt="Foto 2">
+              </div>
+              <div class="photo-wrapper">
+                  <img src="sadio mane bayern.jpg" alt="Foto 3">
+              </div>
+              <div class="photo-wrapper">
+                <img src="germania.jpg" alt="Foto 3">
+
+            </div>
+            <div class="photo-wrapper">
+              <img src="photo_5969946787471018755_y.jpg" alt="Foto 3">
+          
+          </div>
+          <div class="photo-wrapper">
+            <img src="Toro_Tao_V2.jpg" alt="Foto 3">
+        </div>
+        <div class="photo-wrapper">
+          <img src="toro v2.png" alt="Foto 3">
+      </div>
+              <!-- Continua con le altre foto -->
+          </div>
+          <button class="scroll-btn right" onclick="scrollRightPhotos()">&#10095;</button>
+      </div>
+  </header>
+  <section class="Contact" id="Contact">
+    <h2 class="heading">Contact</h2>
+    <p class="contact-description">Sono qui per collaborare o rispondere alle tue domande!</p>
+    <form action="#" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Oggetto:</label>
+        <input type="text" id="name" name="name" placeholder="Inserisci l'oggetto" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Messaggio:</label>
+        <textarea id="message" name="message" placeholder="Scrivi il tuo messaggio qui..." rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn">Invia</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Sebastian Filote. Tutti i diritti riservati.</p>
+  </footer>
+  
+</body>
+</html>      
+        </section>
+       <script src="script.js"></script>
+</body>
+</html>
